@@ -11,3 +11,5 @@ after googling the project url I was shocked to see how much this has been passe
 It seemed like the biggest issue with it was that when QR'ing google maps it only loaded the base url and not the specific zoom level / location (which I have added today March 20th, 2012) but there was never any entry for this in the issues.  While I wouldn't have known about the issues until I logged in anyway (now its set up properly to email me new issues) I would never know to fix them in the first place.
 
 I want to be better at fixing issues in my code, so if you have an issue with something please [http://code.google.com/p/qrbookmarklet/issues/entry submit a bug] and I will do my best to fix it.
+
+I also started a [ChangeLog Changelog] that shows what has been added
