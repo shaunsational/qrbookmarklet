@@ -2,6 +2,7 @@
 
 = Changelog =
 
+While most changes will be automatic because they load in the file that gets inserted into the page, there may be certain times where we need to update the code that pulls that file in, for example March 14th 2012 the https functionality was added that requires your bookmarklet to be updated so it does not use http any longer.
 	
 Mar 20, 2012
   * added functionality to get the location/zoom level of a google map
