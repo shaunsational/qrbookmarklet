@@ -47,7 +47,7 @@ function cleanUp()
 cleanUp();
 
 var selectedText = getSelected();
-var qrData = (selectedText == false) ? customURL(document.location.href) : selectedText;
+var qrData = (selectedText == false) ? customURL(encodeURI(document.location.href)) : selectedText;
 
 var shade = document.createElement("div");
 	shade.setAttribute('class','shaunsational_qr');
@@ -62,7 +62,7 @@ var centr = document.createElement("div");
 var qrdiv = document.createElement("div");
 	qrdiv.setAttribute('class','shaunsational_qr');
 	qrdiv.setAttribute('id','qrdiv');
-	qrdiv.setAttribute('style','margin:25px auto auto auto;background-color:#FFF;height:320px;width:320px;z-index:1001;-moz-border-radius:20px;');   
+	qrdiv.setAttribute('style','margin:40px auto auto auto;background-color:#FFF;height:320px;width:320px;z-index:1001;-moz-border-radius:20px;');   
    
 var qrcode = document.createElement("img");
 	qrcode.setAttribute('class','shaunsational_qr');
