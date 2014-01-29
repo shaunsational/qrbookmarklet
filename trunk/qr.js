@@ -47,7 +47,7 @@ function cleanUp()
 cleanUp();
 
 var selectedText = getSelected();
-var qrData = (selectedText == false) ? customURL(encodeURI(document.location.href)) : selectedText;
+var qrData = (selectedText == false) ? customURL(document.location.href) : selectedText;
 
 var shade = document.createElement("div");
 	shade.setAttribute('class','shaunsational_qr');
@@ -68,7 +68,7 @@ var qrcode = document.createElement("img");
 	qrcode.setAttribute('class','shaunsational_qr');
 	qrcode.setAttribute('id','qrcode');
 	qrcode.setAttribute('style','margin:10px;cursor:pointer;');
-	qrcode.setAttribute('src','https://chart.googleapis.com/chart?cht=qr&chs=300x300&chld=H|0&chl=' + qrData);
+	qrcode.setAttribute('src','https://chart.googleapis.com/chart?cht=qr&chs=300x300&chld=H|0&chl=' + encodeURI(qrData));
 	qrcode.setAttribute('title','Click to close.');
 	
 var qrurl = document.createElement("div");
